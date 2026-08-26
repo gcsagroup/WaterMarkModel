@@ -1,0 +1,51 @@
+# 路径均相对于本配置文件所在目录解析，也可以填写绝对路径。
+model:
+  weights: ../weights/mobilenet_v3_large.pt
+  architecture: mobilenet_v3_large
+  device: auto                  # auto, cpu, cuda, cuda:0
+  dropout: 0.2
+
+preprocess:
+  tile_size: 320                # 与训练网络输入一致
+  stride: 240                   # 相邻滑窗重叠80像素
+  padding_color: [0, 0, 0]      # 小图只在右侧、底部填充，不拉伸
+  imagenet_mean: [0.485, 0.456, 0.406]
+  imagenet_std: [0.229, 0.224, 0.225]
+  apply_exif_orientation: true
+
+inference:
+  threshold: 0.30               # 推荐0.3；越高越严格，越低召回越高但误报越多
+  tile_batch_size: 64
+  amp: true                     # 仅CUDA设备启用
+  recursive: false
+  continue_on_error: true
+  image_extensions: [.jpg, .jpeg, .png, .bmp, .tif, .tiff, .webp]
+
+test:
+  input: ../test
+  result: ../test/result.json
+
+export:
+  output_dir: ../weights/onnx
+  fp32_name: mobilenet_v3_large_fp32.onnx
+  fp16_name: mobilenet_v3_large_fp16.onnx
+  fp8_name: mobilenet_v3_large_fp8.onnx
+  int8_name: mobilenet_v3_large_int8.onnx
+  opset_version: 19
+  dynamic_batch: true
+  validate: true
+  strict_quantized_validation: false
+  fp32_rtol: 0.0001
+  fp32_atol: 0.0001
+  fp16_rtol: 0.005
+  fp16_atol: 0.005
+  fp8_rtol: 0.10
+  fp8_atol: 0.10
+  int8_rtol: 0.25
+  int8_atol: 0.25
+  fp8_mode: weight_only_e4m3fn  # FP8权重存储；图内还原FP32以提高移动端兼容性
+  calibration_input: ../test
+  calibration_recursive: false
+  calibration_max_tiles: 256
+  calibration_method: minmax    # minmax, entropy, percentile, distribution
+  int8_per_channel: true
