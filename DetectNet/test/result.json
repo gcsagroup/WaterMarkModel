@@ -1,0 +1,270 @@
+{
+  "task": "visible_watermark_screening",
+  "model_variant": "mobilenet_v3_large",
+  "weights": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\mobilenet_v3_large.pt",
+  "input": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test",
+  "generated_at": "2026-08-21T14:02:51.600283+08:00",
+  "threshold": 0.3,
+  "aggregation": "max_tile_probability",
+  "total": 15,
+  "watermark_candidates": 9,
+  "non_watermark": 6,
+  "errors": 0,
+  "results": [
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000024097.png",
+      "has_watermark": false,
+      "probability": 0.10818895697593689,
+      "threshold": 0.3,
+      "original_size": [
+        511,
+        640
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        191,
+        0
+      ],
+      "elapsed_ms": 4042.460500029847,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000024636.png",
+      "has_watermark": false,
+      "probability": 0.02992974780499935,
+      "threshold": 0.3,
+      "original_size": [
+        640,
+        427
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        240,
+        0
+      ],
+      "elapsed_ms": 75.72109997272491,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000024776.png",
+      "has_watermark": false,
+      "probability": 0.06644792854785919,
+      "threshold": 0.3,
+      "original_size": [
+        612,
+        612
+      ],
+      "tile_count": 9,
+      "max_tile_coordinate": [
+        240,
+        240
+      ],
+      "elapsed_ms": 3589.2774999374524,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000025005.png",
+      "has_watermark": true,
+      "probability": 0.8893368244171143,
+      "threshold": 0.3,
+      "original_size": [
+        427,
+        640
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        107,
+        0
+      ],
+      "elapsed_ms": 190.92319998890162,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000564337.png",
+      "has_watermark": true,
+      "probability": 0.7841538190841675,
+      "threshold": 0.3,
+      "original_size": [
+        480,
+        640
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        160,
+        240
+      ],
+      "elapsed_ms": 174.35240000486374,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000564355.png",
+      "has_watermark": false,
+      "probability": 0.22695492208003998,
+      "threshold": 0.3,
+      "original_size": [
+        435,
+        640
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        0,
+        320
+      ],
+      "elapsed_ms": 68.71839996892959,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000564657.png",
+      "has_watermark": true,
+      "probability": 0.9891815781593323,
+      "threshold": 0.3,
+      "original_size": [
+        640,
+        480
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        0,
+        160
+      ],
+      "elapsed_ms": 67.75909999851137,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000564822.png",
+      "has_watermark": true,
+      "probability": 0.9999171495437622,
+      "threshold": 0.3,
+      "original_size": [
+        500,
+        375
+      ],
+      "tile_count": 4,
+      "max_tile_coordinate": [
+        180,
+        55
+      ],
+      "elapsed_ms": 3094.7511000558734,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000564851.png",
+      "has_watermark": true,
+      "probability": 0.9997640252113342,
+      "threshold": 0.3,
+      "original_size": [
+        640,
+        394
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        320,
+        0
+      ],
+      "elapsed_ms": 163.5797000490129,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000565230.png",
+      "has_watermark": true,
+      "probability": 0.5937860012054443,
+      "threshold": 0.3,
+      "original_size": [
+        640,
+        418
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        320,
+        98
+      ],
+      "elapsed_ms": 64.44500002544373,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000565622.png",
+      "has_watermark": true,
+      "probability": 0.5923718810081482,
+      "threshold": 0.3,
+      "original_size": [
+        640,
+        331
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        240,
+        11
+      ],
+      "elapsed_ms": 65.20890002138913,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000565635.png",
+      "has_watermark": true,
+      "probability": 0.6588566303253174,
+      "threshold": 0.3,
+      "original_size": [
+        640,
+        480
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        240,
+        160
+      ],
+      "elapsed_ms": 67.93570006266236,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000565715.png",
+      "has_watermark": false,
+      "probability": 0.12158141285181046,
+      "threshold": 0.3,
+      "original_size": [
+        424,
+        640
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        104,
+        0
+      ],
+      "elapsed_ms": 65.65680005587637,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000565742.png",
+      "has_watermark": true,
+      "probability": 0.9933589100837708,
+      "threshold": 0.3,
+      "original_size": [
+        640,
+        361
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        320,
+        41
+      ],
+      "elapsed_ms": 65.13330002781004,
+      "error": null
+    },
+    {
+      "image": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\test\\COCO_val2014_000000566105.png",
+      "has_watermark": false,
+      "probability": 0.2349328249692917,
+      "threshold": 0.3,
+      "original_size": [
+        425,
+        640
+      ],
+      "tile_count": 6,
+      "max_tile_coordinate": [
+        105,
+        0
+      ],
+      "elapsed_ms": 68.09060007799417,
+      "error": null
+    }
+  ]
+}
