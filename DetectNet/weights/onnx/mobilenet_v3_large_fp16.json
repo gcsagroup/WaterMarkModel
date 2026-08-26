@@ -1,0 +1,38 @@
+{
+  "task": "visible_watermark_tile_classification",
+  "model_variant": "mobilenet_v3_large",
+  "source_weight": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\mobilenet_v3_large.pt",
+  "source_sha256": "4ef772ab087d07e0a90dd9b5e9bf2cab8a06a2c239814e93f9d27c645d23677c",
+  "source_epoch": 30,
+  "config_threshold": 0.3,
+  "checkpoint_selected_threshold": 0.17,
+  "input": {
+    "name": "images",
+    "shape": [
+      "batch",
+      3,
+      320,
+      320
+    ],
+    "dtype": "float32",
+    "normalization": "ImageNet mean/std; performed outside ONNX"
+  },
+  "output": {
+    "name": "logits",
+    "shape": [
+      "batch"
+    ],
+    "postprocess": "sigmoid per tile, max across image tiles, compare with threshold"
+  },
+  "opset_version": 19,
+  "precision": "fp16",
+  "output_model": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\onnx\\mobilenet_v3_large_fp16.onnx",
+  "output_sha256": "58921914932355fe0fd239ddb862d6905a39c5e77e920bfdab24ad4cdc26586b",
+  "validation": {
+    "passed": true,
+    "max_abs_error": 0.01840353012084961,
+    "mean_abs_error": 0.01840353012084961,
+    "rtol": 0.005,
+    "atol": 0.005
+  }
+}

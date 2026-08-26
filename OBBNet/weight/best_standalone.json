@@ -1,0 +1,18 @@
+{
+  "format": "torchscript",
+  "task": "obb",
+  "source_weight": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\OBB\\weight\\best.pt",
+  "source_sha256": "2c705caa5575cd1413df3d9e9b4b762aeb5207cf3f9a1caebf74af09ebb82585",
+  "output_weight": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\OBB\\weight\\best_standalone.pt",
+  "output_sha256": "3084df755258b28b680b15f4426ff133c3f80bd20cb748f2c6e7751d7c44a858",
+  "input_size": [
+    960,
+    960
+  ],
+  "storage_dtype": "float16",
+  "verified_runtime_dtype": "float32",
+  "class_names": {
+    "0": "watermark"
+  },
+  "max_abs_verification_error": 0.0
+}

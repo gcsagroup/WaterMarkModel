@@ -1,0 +1,43 @@
+{
+  "task": "visible_watermark_tile_classification",
+  "model_variant": "mobilenet_v3_large",
+  "source_weight": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\mobilenet_v3_large.pt",
+  "source_sha256": "4ef772ab087d07e0a90dd9b5e9bf2cab8a06a2c239814e93f9d27c645d23677c",
+  "source_epoch": 30,
+  "config_threshold": 0.3,
+  "checkpoint_selected_threshold": 0.17,
+  "input": {
+    "name": "images",
+    "shape": [
+      "batch",
+      3,
+      320,
+      320
+    ],
+    "dtype": "float32",
+    "normalization": "ImageNet mean/std; performed outside ONNX"
+  },
+  "output": {
+    "name": "logits",
+    "shape": [
+      "batch"
+    ],
+    "postprocess": "sigmoid per tile, max across image tiles, compare with threshold"
+  },
+  "opset_version": 19,
+  "precision": "fp8",
+  "output_model": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\onnx\\mobilenet_v3_large_fp8.onnx",
+  "output_sha256": "1968111dbf517f0ffd2a03d137e2eeb5c12a4c074a2d65716de399fe233ee773",
+  "validation": {
+    "passed": false,
+    "max_abs_error": 0.7809076309204102,
+    "mean_abs_error": 0.7809076309204102,
+    "rtol": 0.1,
+    "atol": 0.1
+  },
+  "storage": "E4M3FN per-output-channel weight-only",
+  "native_fp8_compute": false,
+  "compute_precision": "FP32 after in-graph Cast and scale",
+  "quantized_initializers": 64,
+  "retained_initializers": 64
+}

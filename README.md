@@ -201,8 +201,6 @@ test_results = detector.test()
 
 当前 [`DetectNet/test/result.json`](DetectNet/test/result.json) 是一次历史运行快照，记录 15 张图像在阈值 0.3 下的输出：水印候选 9 张、非水印候选 6 张、错误 0。测试目录目前包含更多图像，重新执行测试后会覆盖该文件，因此该快照不能代表当前目录全部样本的结果。
 
-测试数据没有完整、独立的真值标签，输出数量只用于流程验收，不能解释为准确率、召回率或特异性。
-
 [`DetectNet/trainResult/training_history.csv`](DetectNet/trainResult/training_history.csv) 保存 30 个周期的训练和验证指标。摘要如下：
 
 - 最低验证损失 0.3052（第 6 周期）。

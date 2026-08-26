@@ -1,0 +1,35 @@
+{
+  "format": "onnx",
+  "task": "obb",
+  "source_weight": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\OBB\\weight\\best.pt",
+  "source_sha256": "2c705caa5575cd1413df3d9e9b4b762aeb5207cf3f9a1caebf74af09ebb82585",
+  "input": {
+    "name": "images",
+    "shape": [
+      1,
+      3,
+      960,
+      960
+    ],
+    "dtype": "float32"
+  },
+  "output": {
+    "name": "predictions",
+    "shape": [
+      1,
+      6,
+      18900
+    ],
+    "layout": "[batch, 4 box values + class scores + angle values, anchors]"
+  },
+  "postprocess_included": false,
+  "precision": "fp32",
+  "output_model": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\OBB\\weight\\best.onnx",
+  "output_sha256": "1d2fe56774eb2e73dc5c028eb9fd0c211d036c4b106e985c4a57047879c5f19d",
+  "opset_version": 17,
+  "validation": {
+    "passed": true,
+    "max_abs_error": 0.00014495849609375,
+    "mean_abs_error": 7.094869488355471e-06
+  }
+}

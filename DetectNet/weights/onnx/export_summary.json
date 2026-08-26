@@ -1,0 +1,51 @@
+{
+  "source_weight": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\mobilenet_v3_large.pt",
+  "tile_size": 320,
+  "opset_version": 19,
+  "artifacts": {
+    "fp32": {
+      "path": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\onnx\\mobilenet_v3_large_fp32.onnx",
+      "size_mb": 16.032,
+      "validation": {
+        "passed": true,
+        "max_abs_error": 1.9073486328125e-06,
+        "mean_abs_error": 1.9073486328125e-06,
+        "rtol": 0.0001,
+        "atol": 0.0001
+      }
+    },
+    "fp16": {
+      "path": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\onnx\\mobilenet_v3_large_fp16.onnx",
+      "size_mb": 8.053,
+      "validation": {
+        "passed": true,
+        "max_abs_error": 0.01840353012084961,
+        "mean_abs_error": 0.01840353012084961,
+        "rtol": 0.005,
+        "atol": 0.005
+      }
+    },
+    "fp8": {
+      "path": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\onnx\\mobilenet_v3_large_fp8.onnx",
+      "size_mb": 4.184,
+      "validation": {
+        "passed": false,
+        "max_abs_error": 0.7809076309204102,
+        "mean_abs_error": 0.7809076309204102,
+        "rtol": 0.1,
+        "atol": 0.1
+      }
+    },
+    "int8": {
+      "path": "D:\\GitProject\\VisibleWaterMarkDetector\\Interference\\Detect\\weights\\onnx\\mobilenet_v3_large_int8.onnx",
+      "size_mb": 4.507,
+      "validation": {
+        "passed": true,
+        "max_abs_error": 0.2770204544067383,
+        "mean_abs_error": 0.2770204544067383,
+        "rtol": 0.25,
+        "atol": 0.25
+      }
+    }
+  }
+}

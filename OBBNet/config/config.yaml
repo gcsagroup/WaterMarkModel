@@ -1,0 +1,54 @@
+model:
+  weights: ../weight/best.pt
+  device: auto          # auto, cpu, cuda, cuda:0
+  input_size: [960, 960] # [height, width], same fixed letterbox size as training
+  fp16: false           # enable only after verifying this checkpoint is numerically stable
+  fp16_fallback: true   # retry once in FP32 if FP16 produces NaN/Inf
+  fp16_disable_cudnn: true # workaround for FP16 Conv NaN on some older NVIDIA GPUs
+  class_names:
+    0: watermark
+
+inference:
+  confidence_threshold: 0.25
+  iou_threshold: 0.45
+  max_detections: 300
+  max_nms: 3000
+
+preprocess:
+  padding_color: [114, 114, 114]
+  scale_up: true
+
+visualization:
+  line_width: 2
+  font_scale: 0.6
+  text_thickness: 1
+  color_bgr: [0, 255, 0]
+  jpeg_quality: 95
+
+test:
+  input: ../test/input
+  output: ../test/output
+  recursive: false
+
+export:
+  onnx_output: ../weight/best.onnx
+  fp16_output: ../weight/best_fp16.onnx
+  fp8_output: ../weight/best_fp8.onnx
+  int8_output: ../weight/best_int8.onnx
+  int8_mode: weight_only # weight_only is safer; static_qdq enables calibrated INT8 compute
+  opset_version: 17
+  fp8_opset_version: 19
+  validate: true
+  validation_rtol: 0.0001
+  validation_atol: 0.0001
+  fp16_validation_rtol: 0.005
+  fp16_validation_atol: 0.005
+  fp8_validation_rtol: 0.1
+  fp8_validation_atol: 0.1
+  int8_validation_rtol: 0.2
+  int8_validation_atol: 0.2
+  int8_calibration_input: ../test/input
+  int8_calibration_recursive: false
+  int8_calibration_max_images: 32
+  int8_calibration_method: minmax # minmax, entropy, percentile
+  strict_quantized_validation: false
