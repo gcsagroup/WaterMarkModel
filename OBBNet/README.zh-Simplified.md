@@ -1,3 +1,5 @@
+[简体中文](README.zh-Simplified.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
+
 # 可见水印 OBB 检测模型
 
 > 本目录提供可见水印旋转目标框（Oriented Bounding Box，OBB）检测模型的独立 PyTorch 推理、测试、权重转换及 ONNX 导出能力。</br>
@@ -17,7 +19,9 @@
 
 ```text
 OBB/
-├── README.md                  # 本交接文档
+├── README.zh-Simplified.md    # 本交接文档（简体中文）
+├── README.zh-Traditional.md   # 本交接文档（繁体中文）
+├── README.en.md               # 本交接文档（英文）
 ├── requirements.txt          # Python 依赖
 ├── .gitignore                # Git 忽略规则
 ├── .gitattributes            # 二进制文件属性
@@ -353,6 +357,4 @@ python -m unittest test_pipeline.py
 2. 对于水印检测业务，通常应优先控制漏检。阈值调整必须同时观察误检数量和后续处理成本。
 3. FP16、FP8、INT8 文件都需要在目标 NPU/GPU 的实际运行时上验证算子支持、延迟、内存和精度，文件更小不等于推理一定更快。
 4. `.pt` 使用基于 pickle 的加载机制，只加载可信权重；移动端优先使用经过目标工具链验证的 ONNX/Core ML/TFLite/厂商格式。
-5. 当前模型基于 YoloV11m-OBB 再训练得来，训练环境中使用了 Ultralytics 库及其衍生组件；
-6. 考虑到 YoloV11 商业授权条例，正式上线前应开源项目代码，若无法开源则应避免在业务中使用 Ultralytics 相关组件，当前项目中已使用 Torch 重构推理链路，去除了 Ultralytics 相关依赖。
-
+5. 当前模型基于 YoloV11m-OBB 再训练，训练环境中使用了 Ultralytics 库及其衍生组件；当前项目中已使用 Torch 重构推理链路，去除了 Ultralytics 相关依赖。

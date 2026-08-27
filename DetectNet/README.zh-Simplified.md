@@ -1,3 +1,5 @@
+[简体中文](README.zh-Simplified.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
+
 # 可见水印初筛模型推理项目
 
 ## 1. 项目用途与边界

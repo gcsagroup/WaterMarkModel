@@ -1,4 +1,6 @@
-# 可见水印两阶段检测项目
+[简体中文](README.zh-Simplified.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
+
+# 可见水印检测
 
 本目录包含两个相互衔接的可见水印模型：
 
@@ -29,7 +31,9 @@ DetectNet 初筛
 
 ```text
 water_mark_detect/
-├── README.md                         # 本文：两阶段项目统一说明
+├── README.zh-Simplified.md           # 两阶段项目统一说明（简体中文）
+├── README.zh-Traditional.md          # 两阶段项目统一说明（繁体中文）
+├── README.en.md                      # 两阶段项目统一说明（英文）
 ├── DetectNet/                        # 第一阶段：图像级水印初筛
 │   ├── config/config.yaml            # 推理、预处理、测试及导出配置
 │   ├── test/                         # 测试图像及汇总结果
@@ -464,11 +468,10 @@ python export_onnx.py
 1. 两个模型主要基于合成数据或有限真实数据训练，训练/验证指标不等同于真实互联网数据表现。
 2. 低透明度、面积过小、位置不规律、互相重叠或与字幕相似的水印仍可能漏检或误检，系统应保留人工复核和补标能力，必要时需在真实数据上进行低学习率微调。
 3. OBBNet 基于 YOLO11m-OBB 再训练，训练环境使用过 Ultralytics 及相关组件；当前推理链路已用 PyTorch 重构并移除运行时 Ultralytics 依赖，正式商用前仍应由项目所有者核查所用模型、训练代码和权重对应的授权义务。
-4. 当前目录未提供开源许可证。公开或对外分发前应补充合适的 `LICENSE`，并完成数据、依赖及模型权重的授权审查。
 
 ## 8. 子项目详细文档
 
 本 README 是两个项目的统一入口。需要查看原始的独立说明时，可参考：
 
-- [`DetectNet/Readme.md`](DetectNet/Readme.md)
-- [`OBBNet/README.md`](OBBNet/README.md)
+- [`DetectNet/README.zh-Simplified.md`](DetectNet/README.zh-Simplified.md)
+- [`OBBNet/README.zh-Simplified.md`](OBBNet/README.zh-Simplified.md)
