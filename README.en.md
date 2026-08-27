@@ -1,4 +1,4 @@
-[简体中文](README.zh-Simplified.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
+[简体中文](README.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
 
 # Visible Watermark Detection
 
