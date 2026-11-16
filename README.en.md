@@ -1,5 +1,7 @@
 [简体中文](README.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
 
+The [Wispio model rights record](WISPIO-MODEL-RIGHTS.md) lists the GCSA permissions confirmed for Wispio and the evidence still needed to distribute the complete models.
+
 # Visible Watermark Detection
 
 This repository contains two connected visible-watermark models:

@@ -2,6 +2,8 @@
 
 # 可见水印 OBB 检测模型
 
+[OBBNet 模型分发权限](../WISPIO-MODEL-RIGHTS.md#obbnet)列出 GCSA 已确认的授权范围，以及完整模型发行前仍需补齐的依据。
+
 > 本目录提供可见水印旋转目标框（Oriented Bounding Box，OBB）检测模型的独立 PyTorch 推理、测试、权重转换及 ONNX 导出能力。</br>
 > 当前模型的输入仅包含一个类别：`watermark`，即应使用 `Detect` 模型对图像进行一次初筛后，将识别为 `watermark` 的图像再输入当前 `OBB` 模型进行水印识别与标注，以降低算力消耗，最终结果以 `OBB` 模型输出为准。
 

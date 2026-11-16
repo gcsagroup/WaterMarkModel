@@ -38,7 +38,7 @@ Detect/
 └── requirements.txt
 ```
 
-项目没有附带开源许可证。上传公开仓库前，应由项目所有者补充合适的 `LICENSE`，并确认训练数据、测试图像和权重具备对应的分发权限。较大的 `.pt`、`.onnx` 文件建议通过 Git LFS 管理，仓库已经提供相应的 `.gitattributes` 规则。
+[DetectNet 分发权限](../WISPIO-MODEL-RIGHTS.md#detectnet)列出 GCSA 已授权 Wispio 使用的贡献，以及完整权重发行前仍需补齐的依据。训练数据和测试图片须另行核对授权。较大的 `.pt`、`.onnx` 文件建议通过 Git LFS 管理，仓库已经提供相应的 `.gitattributes` 规则。
 
 ## 3. 环境安装
 

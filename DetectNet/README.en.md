@@ -34,7 +34,7 @@ Detect/
 └── requirements.txt
 ```
 
-No open-source license is included. Before publishing the repository, the project owner should add an appropriate `LICENSE` and verify distribution rights for training data, test images, and weights. Large `.pt` and `.onnx` files should be managed with Git LFS; matching `.gitattributes` rules are already provided.
+The [DetectNet rights record](../WISPIO-MODEL-RIGHTS.md#detectnet) identifies the GCSA contributions cleared for Wispio and the evidence still needed to distribute the checkpoint. Training data and test images require their own rights. Large `.pt` and `.onnx` files should be managed with Git LFS; matching `.gitattributes` rules are already provided.
 
 ## 3. Installation
 
