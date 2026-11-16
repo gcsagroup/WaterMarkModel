@@ -1,6 +1,6 @@
 [简体中文](README.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
 
-[Proposed Wispio distribution permission and model rights](WISPIO-MODEL-RIGHTS.md) (pending rights-holder approval).
+The [Wispio model rights record](WISPIO-MODEL-RIGHTS.md) lists the GCSA permissions confirmed for Wispio and the evidence still needed to distribute the complete models.
 
 # Visible Watermark Detection
 

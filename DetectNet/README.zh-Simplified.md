@@ -38,7 +38,7 @@ Detect/
 └── requirements.txt
 ```
 
-[Wispio 分发许可提案](../WISPIO-MODEL-RIGHTS.md#detectnet)列出待权利人确认的代码与权重。训练数据和测试图片须另行核对授权。较大的 `.pt`、`.onnx` 文件建议通过 Git LFS 管理，仓库已经提供相应的 `.gitattributes` 规则。
+[DetectNet 分发权限](../WISPIO-MODEL-RIGHTS.md#detectnet)列出 GCSA 已授权 Wispio 使用的贡献，以及完整权重发行前仍需补齐的依据。训练数据和测试图片须另行核对授权。较大的 `.pt`、`.onnx` 文件建议通过 Git LFS 管理，仓库已经提供相应的 `.gitattributes` 规则。
 
 ## 3. 环境安装
 

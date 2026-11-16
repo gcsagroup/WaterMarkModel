@@ -1,6 +1,6 @@
 [简体中文](README.zh-Simplified.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
 
-[Wispio 分发许可提案与模型权利说明](WISPIO-MODEL-RIGHTS.md)（待权利人确认）
+[Wispio 模型分发权限](WISPIO-MODEL-RIGHTS.md)列出 GCSA 已确认的授权范围，以及完整模型发行前仍需补齐的依据。
 
 # 可见水印检测
 

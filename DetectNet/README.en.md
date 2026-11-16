@@ -34,7 +34,7 @@ Detect/
 └── requirements.txt
 ```
 
-The [Wispio distribution proposal](../WISPIO-MODEL-RIGHTS.md#detectnet) covers the pending code and checkpoint permissions. Training data and test images require their own rights. Large `.pt` and `.onnx` files should be managed with Git LFS; matching `.gitattributes` rules are already provided.
+The [DetectNet rights record](../WISPIO-MODEL-RIGHTS.md#detectnet) identifies the GCSA contributions cleared for Wispio and the evidence still needed to distribute the checkpoint. Training data and test images require their own rights. Large `.pt` and `.onnx` files should be managed with Git LFS; matching `.gitattributes` rules are already provided.
 
 ## 3. Installation
 

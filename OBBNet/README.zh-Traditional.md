@@ -2,7 +2,7 @@
 
 # 可見水印 OBB 檢測模型
 
-[YOLO 權重及 Wispio 散布授權提案](../WISPIO-MODEL-RIGHTS.md#obbnet)（待確認）
+[OBBNet 模型散布權限](../WISPIO-MODEL-RIGHTS.md#obbnet)列出 GCSA 已確認的授權範圍，以及完整模型發行前仍須補齊的依據。
 
 > 本目錄提供可見水印旋轉目標框（Oriented Bounding Box，OBB）檢測模型的獨立 PyTorch 推理、測試、權重轉換及 ONNX 導出能力。</br>
 > 當前模型的輸入僅包含一個類別：`watermark`，即應使用 `Detect` 模型對圖像進行一次初篩后，將識別為 `watermark` 的圖像再輸入當前 `OBB` 模型進行水印識別與標注，以降低算力消耗，最終結果以 `OBB` 模型輸出為準。
