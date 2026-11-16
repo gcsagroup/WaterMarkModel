@@ -38,7 +38,7 @@ Detect/
 └── requirements.txt
 ```
 
-項目沒有附帶開源許可證。上傳公開倉庫前，應由項目所有者補充合適的 `LICENSE`，并確認訓練數據、測試圖像和權重具備對應的分發權限。較大的 `.pt`、`.onnx` 文件建議通過 Git LFS 管理，倉庫已經提供相應的 `.gitattributes` 規則。
+[Wispio 散布授權提案](../WISPIO-MODEL-RIGHTS.md#detectnet)列出待權利人確認的程式碼與權重。訓練資料及測試圖片須另行核對授權。較大的 `.pt`、`.onnx` 文件建議通過 Git LFS 管理，倉庫已經提供相應的 `.gitattributes` 規則。
 
 ## 3. 環境安裝
 

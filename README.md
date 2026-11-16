@@ -1,5 +1,7 @@
 [简体中文](README.zh-Simplified.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
 
+[Wispio 分发许可提案与模型权利说明](WISPIO-MODEL-RIGHTS.md)（待权利人确认）
+
 # 可见水印检测
 
 本目录包含两个相互衔接的可见水印模型：

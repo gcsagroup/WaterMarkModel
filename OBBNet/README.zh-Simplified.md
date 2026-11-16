@@ -2,6 +2,8 @@
 
 # 可见水印 OBB 检测模型
 
+[YOLO 权重及 Wispio 分发许可提案](../WISPIO-MODEL-RIGHTS.md#obbnet)（待确认）
+
 > 本目录提供可见水印旋转目标框（Oriented Bounding Box，OBB）检测模型的独立 PyTorch 推理、测试、权重转换及 ONNX 导出能力。</br>
 > 当前模型的输入仅包含一个类别：`watermark`，即应使用 `Detect` 模型对图像进行一次初筛后，将识别为 `watermark` 的图像再输入当前 `OBB` 模型进行水印识别与标注，以降低算力消耗，最终结果以 `OBB` 模型输出为准。
 

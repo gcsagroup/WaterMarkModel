@@ -2,6 +2,8 @@
 
 # Visible Watermark OBB Detector
 
+[YOLO weights and proposed Wispio distribution rights](../WISPIO-MODEL-RIGHTS.md#obbnet) (pending review).
+
 > This directory provides standalone PyTorch inference, testing, weight conversion, and ONNX export for a visible-watermark Oriented Bounding Box (OBB) detector.</br>
 > The model has one class, `watermark`. Screen images with `Detect` first, then send candidate images to this `OBB` model for detection and annotation to reduce compute usage. Treat OBB output as the final model result.
 

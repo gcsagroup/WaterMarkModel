@@ -1,5 +1,7 @@
 [简体中文](README.md) | [繁體中文](README.zh-Traditional.md) | [English](README.en.md)
 
+[Proposed Wispio distribution permission and model rights](WISPIO-MODEL-RIGHTS.md) (pending rights-holder approval).
+
 # Visible Watermark Detection
 
 This repository contains two connected visible-watermark models:
